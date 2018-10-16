@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Documentation page about JavaScript</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+			<nav id="navbar">
+				<header>
+					<h3>Learn JavaScript</h3>
+				</header>
+
+				<a href="#js_intro">JS Introduction</a>
+				<a href="#js_syntax">JS Syntax</a>
+				<a href="#Javascript_and_Java">JavaScript and Java</a>
+				<a href="#js_statements">JS Statements</a>
+				<a href="#js_variables">JS Variables</a>
+				<a href="#js_data_types">JS Data Types</a>
+				<a href="#js_strings">JS Strings</a>
+				<a href="#js_numbers">JS Numbers</a>
+				<a href="#js_dates">JS Dates</a>
+				<a href="#js_math">JS Math</a>
+				<a href="#js_booleans">JS Booleans</a>
+				<a href="#js_comparisons">JS Comparisons</a>
+				<a href="#js_conditions">JS Conditions</a>
+				<a href="#js_operators">JS Operators</a>
+				<a href="#js_comments">JS Comments</a>
+				<a href="#js_functions">JS Functions</a>
+				<a href="#js_objects">JS Objects</a>
+				<a href="#js_events">JS Events</a>
+				<a href="#js_arrays">JS Arrays</a>
+				<a href="#js_scope">JS Scope</a>
+				<a href="#js_switch">JS Switch</a>
+				<a href="#js_loop_for">JS Loop For</a>
+				<a href="#js_loop_while">JS Loop While</a>
+				<a href="#js_hoisting">JS Hoisting</a>
+				<a href="#js_errors">JS Errors</a>
+				<a href="#js_debugging">JS Debugging</a>
+				<a href="#js_forms">JS Forms</a>
+				<a href="#reference">Reference</a>
+
+			</nav>
+
+		<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 7</div>
+		  <img src="pic1.jpg">
+		  <h1 class="text">JavaScript is the way, the truth and the life!</h1>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 7</div>
+		  <img src="pic2.jpg">
+		  <h1 class="text">JavaScript is the way, the truth and the life!</h1>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 7</div>
+		  <img src="pic3.jpg">
+		  <h1 class="text">JavaScript is the way, the truth and the life!</h1>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">4 / 7</div>
+		  <img src="pic4.jpg">
+		  <h1 class="text">JavaScript is the way, the truth and the life!</h1>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">5 / 7</div>
+		  <img src="pic5.jpg">
+		  <h1 class="text">JavaScript is the way, the truth and the life!</h1>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">6 / 7</div>
+		  <img src="pic6.jpg">
+		  <h1 class="text">JavaScript is the way, the truth and the life!</h1>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">7 / 7</div>
+		  <img src="pic7.png">
+		  <h1 class="text">JavaScript is the way, the truth and the life!</h1>
+		</div>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		</div>
+
+		<script src="js/index.js"></script>
+
+
+		<main id='main-doc'>
+
+			<section class="main-section" id="js_intro">
+
+				<header>
+					<h3 class="categories">JS Introduction</h3>
+				</header>
+
+				<p>This tutorial will teach you the basics about JavaScript, the programming language which will bring your website to life. .</p>
+
+				<h4>Why study JavaScript?</h4>
+
+				<p>1. It can make your website a lot more interesting. For example, the slideshow you can see on top of this page was made by using JavaScript!</p>
+				<p>2. You can't call yourself a web developer unless you learn JavaScript. Don't worry, you can do it!</p>
+ 				<p>3. You can be that cool guy from your neighborhood which manipulates webpages at your own desire and therefore you will manipulate ladies' hearts too! </p>
+
+				<h4>What do I need to learn JavaScript?</h4>
+
+				<p>First of all, you need a decent knowledge about HTML and CSS.</p>
+
+				<p>Second, make sure you understand all the examples from this tutorial.</p>
+
+				<p>Third, you need a text editor to write the codes when you'll play with JavaScript. I recommend Sublime Text 3, but you can also do it via the good ol' Notepad.</p>
+
+				<p>Last but not least, you need the desire to succeed and a lot of patience. Most programmers fail in writing the suitable code on the first try, so don't get discouraged whatever you do! And don't forget that even Chuck Norris was getting his ass kicked on some movies. Seek for improvement, not perfection!</p>
+
+				<p>Optionally, you can pray to God, Allah, Buddha, Satan, Thor, Batman or to whatever imaginary friend you have!</p>
+
+			</section>
+
+			<section class="main-section" id="js_syntax">
+
+				<header>
+					<h3 class="categories">JS Syntax</h3>
+				</header>
+
+				<p>JavaScript syntax is the set of rules, how JavaScript programs are constructed:</p>
+
+				<div class="div-with-code">
+					<code>var x, y;          <span>// How to declare variables</span></code> <br>
+					<code>	x = 5; y = 6;      <span>// How to assign values</span></code> <br>
+					<code>	z = x + y;         <span>// How to compute values</span></code>
+				</div>
+
+				<h4>JavaScript Variables</h4>
+					<p>In a programming language, variables are used to store data values.</p>
+
+					<p>JavaScript uses the <mark>var</mark> keyword to declare variables.</p>
+
+					<p>An equal sign is used to assign values to variables.</p>
+
+					<p>In this example, x is defined as a variable. Then, x is assigned (given) the value 6:</p>
+
+				<div class="div-with-code">
+					<code>var x;</code> <br>
+
+					<code>x = 6;</code>
+				</div>
+
+				<h4>JavaScript Operators</h4>
+
+					<p>JavaScript uses <strong>arithmetic operators</strong> <mark>( + - *  / )</mark> to compute values:</p>
+
+					<div class="div-with-code">
+						<code>(5 + 6) * 10</code>
+					</div>
+
+					<p>JavaScript uses an <strong>assignment operator</strong> <mark>( = )</mark> to assign values to variables:</p>
+
+					<div class="div-with-code">
+						<code>var x, y;</code> <br>
+						<code>x = 5;</code> <br>
+						<code>y = 6;</code>
+					</div>
+
+				<h4>JavaScript Keywords</h4>
+					<p>JavaScript keywords are used to identify actions to be performed. The <strong>var</strong> keyword tells the browser to create variables:</p>
+
+					<div class="div-with-code">
+						<code>var x, y;</code> <br>
+						<code>x = 5 + 6;</code> <br>
+						<code>y = x * 10;</code>
+					</div>
+
+				<h4>JavaScript Comments</h4>
+					<p>Not all JavaScript statements are "executed".</p>
+
+					<p>Code after double slashes <strong>//</strong> or between <strong>/*</strong> and <strong>*/</strong> is treated as a comment.</p>
+
+					<p>Comments are ignored, and will not be executed:</p>
+
+					<div class="div-with-code">
+						<code>var x = 5;   <span>// I will be executed</span></code> <br>
+						<code><span>// var x = 6;   I will NOT be executed</span></code>
+					</div>
+
+					<h4>JavaScript Identifiers</h4>
+						<p>Identifiers are names.</p>
+
+						<p>In JavaScript, identifiers are used to name variables (and keywords, and functions, and labels).</p>
+
+						<p>The rules for legal names are much the same in most programming languages.</p>
+
+						<p>In JavaScript, the first character must be a letter, or an underscore (_), or a dollar sign ($).</p>
+
+						<p>Subsequent characters may be letters, digits, underscores, or dollar signs.</p>
+
+					<div class="important-div">
+						<h4>IMPORTANT!</h4> 
+						<p>Numbers are not allowed as the first character.</p>
+						<p>This way JavaScript can easily distinguish identifiers from numbers.</p>
+					</div>
+
+			</section>
+
+			<section class="main-section" id="Javascript_and_Java">
+				<header>
+					<h3 class="categories">JavaScript and Java</h3>
+				</header>
+
+				<h4>Never confuse JavaScript with Java!</h4>
+
+				<p>JavaScript and Java are completely different languages, both in concept and design.</p>
+
+				<p>JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+				ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.</p>
+
+				<p>Java is is a general-purpose computer-programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers "write once, run anywhere", meaning that compiled Java code can run on all platforms that support Java without the need for recompilation. Java was originally developed by James Gosling at Sun Microsystems (which has since been acquired by Oracle Corporation) and released in 1995 as a core component of Sun Microsystems' Java platform. </p>
+
+			</section>
+
+			<section class="main-section" id="js_statements">
+				<header>
+					<h3 class="categories">JS Statements</h3>
+				</header>
+
+				<p>Example:</p>
+				
+			<div class="div-with-code">
+				<code>var x, y, z;    <span>// Statement 1</span></code> <br>
+				<code>	x = 5;         <span> // Statement 2</span></code> <br>
+				<code>	y = 6;         <span> // Statement 3</span></code> <br>
+				<code>z = x + y;      <span>// Statement 4</span></code>
+			</div>
+
+			<h4>JavaScript Programs</h4>
+			<p>A computer program is a list of "instructions" to be "executed" by a computer.</p>
+
+			<p>In a programming language, these programming instructions are called statements.</p>
+
+			<p>A JavaScript program is a list of programming statements.</p>
+
+			<h4>JavaScript Statements</h4>
+			<p>JavaScript statements are composed of: Values, Operators, Expressions, Keywords, and Comments.</p>
+
+
+			</section>
+
+			<section class="main-section" id="js_variables">
+				<header>
+					<h3 class="categories">JS Variables</h3>
+				</header>
+
+				<p>JavaScript variables are containers for storing data values.</p>
+
+				<p>In this example, x, y, and z, are variables:</p>
+
+				<div class="div-with-code">
+					<code>var x = 5; <span>// x stores the value 5</span></code> <br>
+					<code>var y = 6; <span>// y stores the value 6</span></code> <br>
+					<code>var z = x + y; <span>// z stores the value 11</span></code>
+				</div>
+
+				<h4>JavaScript Identifiers</h4>
+
+				<p>All JavaScript <strong>variables</strong> must be identified with <strong>unique names.</strong></p>
+
+				<p>These unique names are called <strong>identifiers.</strong></p>
+
+				<p>Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).</p>
+
+				<p>The general rules for constructing names for variables (unique identifiers) are:</p>
+
+				<ul>
+					<li>Names can contain letters, digits, underscores, and dollar signs.</li>
+					<li>Names must begin with a letter</li>
+					<li>Names can also begin with $ and _ (but we will not use it in this tutorial)</li>
+					<li>Reserved words (like JavaScript keywords) cannot be used as names</li>
+				</ul>
+
+				<h4>Declaring (Creating) JavaScript Variables</h4>
+				<p>Creating a variable in JavaScript is called "declaring" a variable.</p>
+
+				<p>You declare a JavaScript variable with the <mark>var</mark> keyword:</p>
+
+				<div class="div-with-code">
+					<code>var carName;</code>
+				</div>
+
+				<p>After the declaration, the variable has no value. (Technically it has the value of <strong>undefined</strong>)</p>
+
+				<p>To assign a value to the variable, use the equal sign:</p>
+
+				<div class="div-with-code">
+					<code>carName = "Volvo";</code>
+				</div> <br>
+
+				You can also assign a value to the variable when you declare it: <br><br>
+
+				<div class="div-with-code">
+					<code>var carName = "Volvo";</code>
+				</div>
+
+				<div class="important-div">
+					<p>It's recommended and a good programming practice to declare all variables at the beginning of a script.</p>
+				</div>
+
+			</section>
+
+			<section class="main-section" id="js_operators">
+				<header>
+					<h3 class="categories">JS Operators</h3>
+				</header>
+
+				<h4>JavaScript Arithmetic Operators</h4>
+				<p>Arithmetic operators are used to perform arithmetic on numbers:</p>
+
+				<table class="operators-table">
+					<tr>
+						<th>Operator</th>
+						<th>Description</th>
+					</tr>
+
+					<tr>
+						<td>+</td>
+						<td>Addition</td>
+					</tr>
+
+					<tr>
+						<td>-</td>
+						<td>Subtraction</td>
+					</tr>
+
+					<tr>
+						<td>*</td>
+						<td>Multiplication</td>
+					</tr>
+
+					<tr>
+						<td>/</td>
+						<td>Division</td>
+					</tr>
+
+					<tr>
+						<td>%</td>
+						<td>Modulus (Division Remainder)</td>
+					</tr>
+
+					<tr>
+						<td>++</td>
+						<td>Increment</td>
+					</tr>
+
+					<tr>
+						<td>--</td>
+						<td>Decrement</td>
+					</tr>
+
+				</table>
+
+				<h4>JavaScript Assignment Operators</h4>
+
+				<p>Assignment operators assign values to JavaScript variables.</p>
+
+				<table width="600px;">
+					<tr>
+						<th>Operator</th>
+						<th>Example</th>
+						<th>Same as</th>
+					</tr>
+
+					<tr>
+						<td>=</td>
+						<td>x = y</td>
+						<td>x = y</td>
+					</tr>
+
+					<tr>
+						<td>+=</td>
+						<td>x += y</td>
+						<td>x = x + y</td>
+					</tr>
+
+					<tr>
+						<td>-=</td>
+						<td>x -= y</td>	
+						<td>x = x - y</td>
+					</tr>
+
+					<tr>
+						<td>*=</td>
+						<td>x *= y</td>
+						<td>x = x * y</td>
+					</tr>
+
+					<tr>
+						<td>/=</td>
+						<td>x /= y</td>
+						<td>x = x / y</td>
+					</tr>
+
+					<tr>
+						<td>%=</td>
+						<td>x %= y</td>
+						<td>x = x % y</td>
+					</tr>
+
+				</table>
+
+				<h4>JavaScript Comparison Operators:</h4>
+
+				<table>
+					<tr>
+						<th>Operator</th>
+						<th>Description</th>
+					</tr>
+
+					<tr>
+						<td>==</td>
+						<td>Equal to</td>
+					</tr>
+
+					<tr>
+						<td>===</td>
+						<td>Equal value and equal type</td>
+					</tr>
+
+					<tr>
+						<td>!=</td>
+						<td>Not equal</td>
+					</tr>
+
+					<tr>
+						<td>!==</td>
+						<td>Not equal value and not equal type</td>
+					</tr>
+
+					<tr>
+						<td>></td>
+						<td>Greater than</td>
+					</tr>
+
+					<tr>
+						<td><</td>
+						<td>Less than</td>
+					</tr>
+
+					<tr>
+						<td>>=</td>
+						<td>Greater than or equal to</td>
+					</tr>
+
+					<tr>
+						<td><=</td>
+						<td>Less than or equal to</td>
+					</tr>
+
+					<tr>
+						<td>?</td>
+						<td>Ternary operator</td>
+					</tr>
+
+				</table>
+
+			</section>
+
+			<section class="main-section" id="js_data_types">
+				<header>
+					<h3 class="categories">JS Data Types</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_strings">
+				<header>
+					<h3 class="categories">JS Strings</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_numbers">
+				<header>
+					<h3 class="categories">JS Numbers</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_dates">
+				<header>
+					<h3 class="categories">JS Dates</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_math">
+				<header>
+					<h3 class="categories">JS Math</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_booleans">
+				<header>
+					<h3 class="categories">JS Booleans</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_comparisons">
+				<header>
+					<h3 class="categories">JS Comparisons</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_conditions">
+				<header>
+					<h3 class="categories">JS Conditions</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_operators">
+				<header>
+					<h3 class="categories">JS Operators</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_comments">
+				<header>
+					<h3 class="categories">JS Comments</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_functions">
+				<header>
+					<h3 class="categories">JS Functions</h3>
+				</header>
+
+			
+				<p>A JavaScript function is a block of code designed to perform a particular task.</p>
+
+				<p>A JavaScript function is executed when "something" invokes it (calls it).</p>
+
+				<p>Example:</p>
+				
+				<div class="div-with-code">
+					<code>function myFunction(p1, p2) {  </code> <br>
+   					<code> return p1 * p2;              <span>// The function returns the product of p1 and p2</span></code> <br>
+					<code>}</code>
+				</div>
+
+
+				<h4>JavaScript Function Syntax</h4>
+					<p>A JavaScript function is defined with the <strong>function</strong> keyword, followed by a <strong>name</strong>, followed by parentheses <strong>().</strong></p>
+
+					<p>Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).</p>
+
+					<p>The parentheses may include parameter names separated by commas:
+					(parameter1, parameter2, ...)</p>
+
+					<p>The code to be executed, by the function, is placed inside curly brackets: {}</p>
+
+				<div class="div-with-code">
+					<code>function name(parameter1, parameter2, parameter3) { </code> <br>
+					<code>	    code to be executed </code>
+					<code>}</code>
+				</div>
+
+					<p>Function <strong>parameters</strong> are listed inside the parentheses () in the function definition.</p>
+
+					<p>Function <strong>arguments</strong> are the <strong>values</strong> received by the function when it is invoked.</p>
+
+					<p>Inside the function, the arguments (the parameters) behave as local variables.</p> 
+
+					<h4>Function Invocation</h4>
+
+					<p>The code inside the function will execute when "something" invokes (calls) the function:</p>
+
+					<ul>
+						<li>When an event occurs (when a user clicks a button)</li>
+						<li>When it is invoked (called) from JavaScript code</li>
+						<li>Automatically (self invoked)</li>
+					</ul>
+
+					<h4>Why Functions?</h4>
+					<p>You can reuse code: Define the code once, and use it many times.</p>
+
+					<p>You can use the same code many times with different arguments, to produce different results.</p>
+
+			</section>
+
+			<section class="main-section" id="js_objects">
+				<header>
+					<h3 class="categories">JS Objects</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_events">
+				<header>
+					<h3 class="categories">JS Events</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_arrays">
+				<header>
+					<h3 class="categories">JS Arrays</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_scope">
+				<header>
+					<h3 class="categories">JS Scope</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_switch">
+				<header>
+					<h3 class="categories">JS Switch</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_loop_for">
+				<header>
+					<h3 class="categories">JS Loop For</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_loop_while">
+				<header>
+					<h3 class="categories">JS Loop While</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_hoisting">
+				<header>
+					<h3 class="categories">JS Hoisting</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_errors">
+				<header>
+					<h3 class="categories">JS Errors</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_debugging">
+				<header>
+					<h3 class="categories">JS Debugging</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="js_forms">
+				<header>
+					<h3 class="categories">JS Forms</h3>
+				</header>
+			</section>
+
+			<section class="main-section" id="reference">
+				<header>
+					<h3 class="categories">Reference</h3>
+				</header>
+
+				<p>All the technical information for this page was taken from <a href="http://w3schools.com" target="_blank" title="The world's largest web developer site">w3schools.com</a> </p>
+
+			</section>
+
+			<br><br><br>
+
+			<footer>
+				<p>Webpage coded by <a href="https://codepen.io/cristopher927/" target="_blank">Cristian Antonescu</a>
+			</footer>
+
+		</main>
+
+	</body>
+
+</html>

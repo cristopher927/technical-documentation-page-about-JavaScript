@@ -52,13 +52,23 @@ img {
   float: left;
   overflow-y: scroll;
   position: fixed;
-  bottom: 0;
-  top: 0;
+  height: 100%;
 }
 
 #navbar a {
   display: block;
   padding: 4px 8px;
+}
+
+#reference_link {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#reference_link:hover {
+  background-color: #FF8000;
+  color: white;
 }
 
 /* Number text (1/3 etc) */

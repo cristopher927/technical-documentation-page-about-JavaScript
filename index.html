@@ -115,11 +115,11 @@
 					<h3 class="categories">JS Introduction</h3>
 				</header>
 
-				<p>This tutorial will teach you the basics about JavaScript, the programming language which will bring your website to life. .</p>
+				<p>This tutorial will teach you some basic stuff about JavaScript, the programming language which will bring your website to life. .</p>
 
 				<h4>Why study JavaScript?</h4>
 
-				<p>1. It can make your website a lot more interesting. For example, the slideshow you can see on top of this page was made by using JavaScript!</p>
+				<p>1. It can make your website a lot more interesting. For example, the slideshow you can see above was made by using JavaScript!</p>
 				<p>2. You can't call yourself a web developer unless you learn JavaScript. Don't worry, you can do it!</p>
  				<p>3. You can be that cool guy from your neighborhood which manipulates webpages at your own desire and therefore you will manipulate ladies' hearts too! </p>
 
@@ -132,8 +132,6 @@
 				<p>Third, you need a text editor to write the codes when you'll play with JavaScript. I recommend Sublime Text 3, but you can also do it via the good ol' Notepad.</p>
 
 				<p>Last but not least, you need the desire to succeed and a lot of patience. Most programmers fail in writing the suitable code on the first try, so don't get discouraged whatever you do! And don't forget that even Chuck Norris was getting his ass kicked on some movies. Seek for improvement, not perfection!</p>
-
-				<p>Optionally, you can pray to God, Allah, Buddha, Satan, Thor, Batman or to whatever imaginary friend you have!</p>
 
 			</section>
 
@@ -152,6 +150,7 @@
 				</div>
 
 				<h4>JavaScript Variables</h4>
+
 					<p>In a programming language, variables are used to store data values.</p>
 
 					<p>JavaScript uses the <mark>var</mark> keyword to declare variables.</p>
@@ -192,6 +191,7 @@
 					</div>
 
 				<h4>JavaScript Comments</h4>
+
 					<p>Not all JavaScript statements are "executed".</p>
 
 					<p>Code after double slashes <strong>//</strong> or between <strong>/*</strong> and <strong>*/</strong> is treated as a comment.</p>
@@ -487,30 +487,204 @@
 				<header>
 					<h3 class="categories">JS Data Types</h3>
 				</header>
+
+				<p>JavaScript variables can hold many data types: numbers, strings, objects, booleans, arrays, etc.</p>
+
+				<p>In programming, data types is an important concept.</p>
+
+				<p>To be able to operate on variables, it is important to know something about the type.</p>
+
+				<p>You can use the JavaScript <strong>typeof</strong> operator to find the type of a JavaScript variable.</p>
+
+				<p>The <strong>typeof</strong> operator returns the type of a variable or an expression:</p>
+
+				<p>Example:</p>
+
+				<div class="div-with-code">
+					<code>typeof "John"              <span>// Returns "string"</span></code> <br>
+					<code>typeof 314                 <span>// Returns "number"</span></code>
+				</div>
+
+				<p>In JavaScript, a variable without a value, has the value <strong>undefined.</strong> The <strong>typeof</strong> is also <strong>undefined.</strong></p>
+
+				<h4>Null</h4>
+
+				<p>In JavaScript <strong>null</strong> is "nothing". It is supposed to be something that doesn't exist.</p>
+
+				<p>Unfortunately, in JavaScript, the data type of null is an object.</p>
+
+				<p class="important-div">You can consider it a bug in JavaScript that typeof null is an object. It should be null.</p>
+
+				<p>You can empty an object by setting it to null:</p>
+
+			<div class="div-with-code">
+				<code>var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};</code> <br>
+				<code>person = null;        <span>// Now value is null, but type is still an object</span></code>
+			</div>
+
 			</section>
 
 			<section class="main-section" id="js_strings">
 				<header>
 					<h3 class="categories">JS Strings</h3>
 				</header>
+
+				<p>JavaScript strings are used for storing and manipulating text.</p>
+
+				<p>A JavaScript string is zero or more characters written inside quotes or double quotes.</p>
+
+				<p>Example:</p>
+
+				<div class="div-with-code">
+					<code>var carname = "Volvo XC60";  <span>// Double quotes</span></code> <br>
+					<code>var carname = 'Volvo XC60';  <span>// Single quotes</span></code>
+				</div>
+
+				<h4>Special Characters</h4>
+				<p>Because strings must be written within quotes, JavaScript will misunderstand this string:</p>
+
+				<div class="div-with-code">
+					<code>var x = "We are the so-called "Vikings" from the north.";</code>
+				</div>
+
+				<p>The string will be chopped to "We are the so-called ".</p>
+
+				<p>The solution to avoid this problem, is to use the backslash (\) escape character:</p>
+
+				<div class="div-with-code">
+					<code>var x = "We are the so-called \"Vikings\" from the north.";</code>
+				</div>
+
+				<h4>Breaking Long Code Lines</h4>
+				<p>For best readability, programmers often like to avoid code lines longer than 80 characters.</p>
+
+				<p>If a JavaScript statement does not fit on one line, the best place to break it is after an operator:</p>
+
+				<div class="div-with-code">
+					<code>document.getElementById("demo").innerHTML =</code> <br>
+					<code>"Hello Dolly!";</code>
+				</div>
+
+				<p>You can also break up a code line within a text string with a single backslash:</p>
+
+				<div class="div-with-code">
+					<code>document.getElementById("demo").innerHTML = "Hello \ </code> <br>
+					<code>Dolly!";</code>
+				</div>
+
 			</section>
 
 			<section class="main-section" id="js_numbers">
 				<header>
 					<h3 class="categories">JS Numbers</h3>
 				</header>
+
+				<p>JavaScript has only one type of number. Numbers can be written with or without decimals.</p>
+
+				<p>Example:</p>
+
+				<div class="div-with-code">
+					<code>var x = 3.14;    <span>// A number with decimals</span></code> <br>
+					<code>var y = 3;       <span>// A number without decimals</span></code>
+				</div>
+
+				<div class="important-div">
+						<p><ins>WARNING !! </ins> <br><br>
+
+					JavaScript uses the + operator for both addition and concatenation. <br>
+
+					Numbers are added. Strings are concatenated. <br>
+					</p>
+				</div>
+
+				<p>If you add two numbers, the result will be a number:</p>
+
+			<div class="div-with-code">
+				<code>var x = 10;</code> <br>
+				<code>var y = 20;</code> <br>
+				<code>var z = x + y;           <span>// z will be 30 (a number)</span></code>
+			</div>
+
+			<p>If you add two strings, the result will be a string concatenation:</p>
+
+			<div class="div-with-code">
+				<code>var x = "10";</code> <br>
+				<code>var y = "20";</code> <br>
+				<code>var z = x + y;           <span>// z will be 1020 (a string)</span></code>
+			</div>
+
+					<h4>NaN - Not a Number</h4>
+					<p><strong>NaN</strong> is a JavaScript reserved word indicating that a number is not a legal number.</p>
+
+					<p>Trying to do arithmetic with a non-numeric string will result in <strong>NaN</strong> (Not a Number):</p>
+
+					<div class="div-with-code">
+						<code>var x = 100 / "Apple";  <span>// x will be NaN (Not a Number)</span></code>
+					</div>
+
 			</section>
 
 			<section class="main-section" id="js_dates">
 				<header>
 					<h3 class="categories">JS Dates</h3>
 				</header>
+
+				<p>By default, JavaScript will use the browser's time zone and display a date as a full text string.</p>
+				<p>Example:</p>
+
+				<strong>Wed Oct 17 2018 06:04:41 GMT+0300 (Eastern European Summer Time)</strong>
+
+				<h4>Creating Date Objects</h4>
+				<p>Date objects are created with the <strong>new Date()</strong> constructor.</p>
+
+				<p>There are 4 ways to create a new date object:</p>
+
+			<div class="div-with-code">
+				<code>new Date()</code> <br>
+				<code>new Date(year, month, day, hours, minutes, seconds, milliseconds)</code> <br>
+				<code>new Date(milliseconds)</code> <br>
+				<code>new Date(date string)</code>
+			</div>
+
+			<p>Example:</p>
+
+			<div class="div-with-code">
+				<code>var d = new Date();</code> <br>
+				<code>document.getElementById("demo").innerHTML = d;</code>
+			</div>
+
 			</section>
 
 			<section class="main-section" id="js_math">
 				<header>
 					<h3 class="categories">JS Math</h3>
 				</header>
+
+				<p>Are you one of the so many people that hate math? Don't worry, JavaScript is ready to make it all so easier for you that you'll be angry that you didn't have it during your math exams at highschool.</p> 
+
+				<p>Just remember these cool methods:</p>
+
+				<p><strong>Math.round(x)</strong> returns the value of x rounded to its nearest integer.</p>
+				<p><strong>Math.pow(x, y)</strong> returns the value of x to the power of y.</p>
+				<p><strong>Math.sqrt(x)</strong> returns the square root of x.</p>
+				<p><strong>Math.abs(x)</strong> returns the absolute (positive) value of x.</p>
+				<p><strong>Math.ceil(x)</strong> returns the value of x rounded up to its nearest integer.</p>
+				<p><strong>Math.floor(x)</strong> returns the value of x rounded down to its nearest integer.</p>
+
+				<p><strong>Math.sin(x)</strong> returns the sine (a value between -1 and 1) of the angle x (given in radians).</p>
+
+				<p>If you want to use degrees instead of radians, you have to convert degrees to radians:
+
+				Angle in radians = Angle in degrees x PI / 180.</p>
+
+				<p><strong>Math.cos(x)</strong> returns the cosine (a value between -1 and 1) of the angle x (given in radians).</p>
+
+				<p>If you want to use degrees instead of radians, you have to convert degrees to radians:
+
+				Angle in radians = Angle in degrees x PI / 180.</p>
+
+				<p><strong>Math.random()</strong> returns a random number between 0 (inclusive), and 1 (exclusive).</p>
+
 			</section>
 
 			<section class="main-section" id="js_booleans">
@@ -672,7 +846,7 @@
 					<h3 class="categories">Reference</h3>
 				</header>
 
-				<p>All the technical information for this page was taken from <a href="http://w3schools.com" target="_blank" title="The world's largest web developer site">w3schools.com</a> </p>
+				<p>The technical information for this page was taken from <a href="http://w3schools.com" target="_blank" title="The world's largest web developer site" id="reference_link">w3schools.com</a> </p>
 
 			</section>
 

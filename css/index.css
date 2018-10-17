@@ -27,7 +27,6 @@ img {
   background-color: #FAFAFA;
 }
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -35,7 +34,6 @@ img {
   width: 60%;
 }
 
-/* Caption text */
 .text {
   color: #f2f2f2;
   font-family: 'Rokkitt', serif;
@@ -71,7 +69,11 @@ img {
   color: white;
 }
 
-/* Number text (1/3 etc) */
+#events-table {
+  width: 700px;
+  text-align: left;
+}
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -80,7 +82,6 @@ img {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   height: 15px;
   width: 15px;
@@ -95,7 +96,6 @@ img {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -115,7 +115,7 @@ table, tr, th, td {
   padding: 5px 15px;
 }
 
-main {
+#main-doc {
   position: absolute;
   left: 230px;
 }
@@ -191,7 +191,31 @@ span {
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+@media only screen and (max-width: 480px) {
+  #navbar {
+    display: none;
+  }
+
+  #main-doc {
+    position: absolute;
+    left: 12px;
+    width: 500px;
+  }
+
+  img {
+    width: 125%;
+    height: 125%
+  }
+
+  .operators-table {
+    width: 500px;
+  }
+
+  #events-table {
+    width: 500px;
+  }
+
+  .text {
+    font-size:12px;
+  }
 } 

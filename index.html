@@ -6,6 +6,7 @@
 		<title>Documentation page about JavaScript</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	</head>
 
@@ -21,6 +22,7 @@
 				<a href="#Javascript_and_Java">JavaScript and Java</a>
 				<a href="#js_statements">JS Statements</a>
 				<a href="#js_variables">JS Variables</a>
+				<a href="#js_operators">JS Operators</a>
 				<a href="#js_data_types">JS Data Types</a>
 				<a href="#js_strings">JS Strings</a>
 				<a href="#js_numbers">JS Numbers</a>
@@ -29,20 +31,16 @@
 				<a href="#js_booleans">JS Booleans</a>
 				<a href="#js_comparisons">JS Comparisons</a>
 				<a href="#js_conditions">JS Conditions</a>
-				<a href="#js_operators">JS Operators</a>
+				<a href="#js_switch">JS Switch</a>
 				<a href="#js_comments">JS Comments</a>
 				<a href="#js_functions">JS Functions</a>
 				<a href="#js_objects">JS Objects</a>
 				<a href="#js_events">JS Events</a>
 				<a href="#js_arrays">JS Arrays</a>
-				<a href="#js_scope">JS Scope</a>
-				<a href="#js_switch">JS Switch</a>
 				<a href="#js_loop_for">JS Loop For</a>
 				<a href="#js_loop_while">JS Loop While</a>
-				<a href="#js_hoisting">JS Hoisting</a>
 				<a href="#js_errors">JS Errors</a>
 				<a href="#js_debugging">JS Debugging</a>
-				<a href="#js_forms">JS Forms</a>
 				<a href="#reference">Reference</a>
 
 			</nav>
@@ -132,6 +130,13 @@
 				<p>Third, you need a text editor to write the codes when you'll play with JavaScript. I recommend Sublime Text 3, but you can also do it via the good ol' Notepad.</p>
 
 				<p>Last but not least, you need the desire to succeed and a lot of patience. Most programmers fail in writing the suitable code on the first try, so don't get discouraged whatever you do! And don't forget that even Chuck Norris was getting his ass kicked on some movies. Seek for improvement, not perfection!</p>
+
+				<h4>How do I begin?</h4>
+
+				<p>The best way to insert JavaScript code in your webpage is by using an external file with the <strong>.js</strong> extension.</p>
+				<p>Just place a link to your JavaScript code anywhere in your HTML page, using the HTML <strong>script</strong> tag and the <strong>src</strong> attribute which will point to your JavaScript file.</p>
+
+				<p>Don't use HTML tags on your external JavaScript file, but only JavaScript!</p>
 
 			</section>
 
@@ -381,7 +386,7 @@
 
 				<p>Assignment operators assign values to JavaScript variables.</p>
 
-				<table width="600px;">
+				<table class="operators-table">
 					<tr>
 						<th>Operator</th>
 						<th>Example</th>
@@ -425,62 +430,7 @@
 					</tr>
 
 				</table>
-
-				<h4>JavaScript Comparison Operators:</h4>
-
-				<table>
-					<tr>
-						<th>Operator</th>
-						<th>Description</th>
-					</tr>
-
-					<tr>
-						<td>==</td>
-						<td>Equal to</td>
-					</tr>
-
-					<tr>
-						<td>===</td>
-						<td>Equal value and equal type</td>
-					</tr>
-
-					<tr>
-						<td>!=</td>
-						<td>Not equal</td>
-					</tr>
-
-					<tr>
-						<td>!==</td>
-						<td>Not equal value and not equal type</td>
-					</tr>
-
-					<tr>
-						<td>></td>
-						<td>Greater than</td>
-					</tr>
-
-					<tr>
-						<td><</td>
-						<td>Less than</td>
-					</tr>
-
-					<tr>
-						<td>>=</td>
-						<td>Greater than or equal to</td>
-					</tr>
-
-					<tr>
-						<td><=</td>
-						<td>Less than or equal to</td>
-					</tr>
-
-					<tr>
-						<td>?</td>
-						<td>Ternary operator</td>
-					</tr>
-
-				</table>
-
+				
 			</section>
 
 			<section class="main-section" id="js_data_types">
@@ -691,30 +641,168 @@
 				<header>
 					<h3 class="categories">JS Booleans</h3>
 				</header>
+
+				<p>A JavaScript Boolean represents one of two values: <strong>true</strong> or <strong>false.</strong></p>
+
+				<p>Very often, in programming, you will need a data type that can only have one of two values, like:</p>
+
+				<ul>
+					<li>YES / NO</li>
+					<li>ON / OFF</li>
+					<li>TRUE / FALSE</li>
+				</ul>
+
+				<p>The JavaScript Boolean data type was made exactly for cases like these.</p>
+
+				<h4>The Boolean() Function</h4>
+				<p>You can use the <strong>Boolean()</strong> function to find out if an expression (or a variable) is true:</p>
+
+				<div class="div-with-code">
+					<code>Boolean(10 > 9)        <span>// returns true</span></code>
+				</div>
+
 			</section>
 
 			<section class="main-section" id="js_comparisons">
 				<header>
 					<h3 class="categories">JS Comparisons</h3>
 				</header>
+
+
+				<p>Comparison operators are used in logical statements to determine equality or difference between variables or values. They can return <strong>true</strong> or <strong>false.</strong></p>
+
+				<h4>JavaScript Comparison Operators:</h4>
+
+				<table>
+					<tr>
+						<th>Operator</th>
+						<th>Description</th>
+					</tr>
+
+					<tr>
+						<td>==</td>
+						<td>Equal to</td>
+					</tr>
+
+					<tr>
+						<td>===</td>
+						<td>Equal value and equal type</td>
+					</tr>
+
+					<tr>
+						<td>!=</td>
+						<td>Not equal</td>
+					</tr>
+
+					<tr>
+						<td>!==</td>
+						<td>Not equal value and not equal type</td>
+					</tr>
+
+					<tr>
+						<td>></td>
+						<td>Greater than</td>
+					</tr>
+
+					<tr>
+						<td><</td>
+						<td>Less than</td>
+					</tr>
+
+					<tr>
+						<td>>=</td>
+						<td>Greater than or equal to</td>
+					</tr>
+
+					<tr>
+						<td><=</td>
+						<td>Less than or equal to</td>
+					</tr>
+
+					<tr>
+						<td>?</td>
+						<td>Ternary operator</td>
+					</tr>
+
+				</table>
+
+				<p>Still not clear how can you use comparison operators? Here's a simple example:</p>
+
+				<div class="div-with-code">
+
+					<code>if (age < 18) text = "Too young";</code>
+					
+				</div>
+
+				<p>So if you're under 18 years old and you admitted that, you can't access a porn site and the "Too young" text will appear to you. Unfortunately for the porn industry, JavaScript can't also detect lies and therefore a lot of children can access porn content.</p>
+
 			</section>
 
 			<section class="main-section" id="js_conditions">
 				<header>
 					<h3 class="categories">JS Conditions</h3>
 				</header>
+
+				<p>Conditional statements in JavaScript are a load of fun! They are used to perform different actions based on different conditions, exactly like in the example shown above.</p>
+
+				<p>There are very few conditional statements and very easy to memorize:</p>
+
+				<ul>
+					<li>Use <strong>if</strong> to specify a block of code to be executed, if a specified condition is true</li>
+					<li>Use <strong>else</strong> to specify a block of code to be executed, if the same condition is false</li>
+					<li>Use <strong>else if</strong> to specify a new condition to test, if the first condition is false</li>
+					Use <strong>switch</strong> to specify many alternative blocks of code to be executed (this one will be explained in the next chapter)
+				</ul>
+
 			</section>
 
-			<section class="main-section" id="js_operators">
+
+			<section class="main-section" id="js_switch">
 				<header>
-					<h3 class="categories">JS Operators</h3>
+					<h3 class="categories">JS Switch</h3>
 				</header>
+
+				<p>The switch statement is used to perform different actions based on different conditions.</p>
+
+				<h4>The JavaScript Switch Statement</h4>
+
+				<p>Use the <strong>switch</strong> statement to select one of many code blocks to be executed.</p>
+
+				<p>Syntax:</p>
+
+				<div class="div-with-code">
+					<code>switch(expression) {</code> <br>
+					 <code>case x: </code> <br>
+					   	  <code>code block</code> <br>
+					   <code>   break;</code> <br>
+		     		<code>  case y:</code> <br>
+					      <code> code block</code> <br>
+					     <code>   break; </code> <br>
+					 <code>   default: </code> <br>
+					    <code>    code block</code> <br>
+				<code>	} </code>
+				</div>
+
 			</section>
 
 			<section class="main-section" id="js_comments">
 				<header>
 					<h3 class="categories">JS Comments</h3>
 				</header>
+
+				<p>Did you ever write some code and after a while you started asking yourself why in the Earth did you wrote it? That's where JavaScript comments come in handy, because they let you write stuff in your code that do not affect at all what is shown in the browser. And they appear with a different color than all the other code, also!</p>
+
+				<h4>Single Line Comments</h4>
+
+				<p>Single line comments start with //.</p>
+
+				<p>Any text between // and the end of the line will be ignored by JavaScript (will not be executed).</p>
+
+				<h4>Multi-line Comments</h4>
+				<p>Multi-line comments start with /* and end with */.</p>
+
+				<p>Any text between /* and */ will be ignored by JavaScript.</p>
+
 			</section>
 
 			<section class="main-section" id="js_functions">
@@ -779,66 +867,275 @@
 				<header>
 					<h3 class="categories">JS Objects</h3>
 				</header>
+
+				<p>Objects are variables too. But objects can contain many values.</p>
+
+				<p>This code assigns many values (Fiat, 500, white) to a variable named car:</p>
+
+				<div class="div-with-code">
+					<code>var car = {type:"Fiat", model:"500", color:"white"};</code>
+				</div>
+
+				<p>The values are written as <strong>name:value</strong> pairs (name and value separated by a colon).</p>
+
+				<p>JavaScript objects are containers for named values called properties or methods.</p>
+
+				<h4>Accessing Object Methods</h4>
+
+				<p>You access an object method with the following syntax:</p>
+
+				<div class="div-with-code">
+					<code>objectName.methodName()</code>
+				</div>
+
 			</section>
 
 			<section class="main-section" id="js_events">
 				<header>
 					<h3 class="categories">JS Events</h3>
 				</header>
+
+				<p>HTML events are "things" that happen to HTML elements.</p>
+
+				<p>When JavaScript is used in HTML pages, JavaScript can "react" on these events.</p>
+
+				<p>An HTML event can be something the browser does, or something a user does.</p>
+
+				<p>Here are some examples of HTML events:</p>
+
+				<ul>
+					<li>An HTML web page has finished loading</li>
+					<li>An HTML input field was changed</li>
+					<li>An HTML button was clicked</li>
+				</ul>
+
+				<h4>Common Event Attributes</h4>
+
+				<p>You can add the following event attributes to your HTML code just the way you add a normal attribute like "style" or "src":</p>
+
+				<table id="events-table">
+					<tr>
+						<th>Event</th>
+						<th>Description</th>
+					</tr>
+					<tr>
+						<td>onchange</td>
+						<td>An HTML element has been changed</td>
+					</tr>
+					<tr>
+						<td>onclick</td>
+						<td>The user clicks an HTML element</td>
+					</tr>
+					<tr>
+						<td>onmouseover</td>
+						<td>The user moves the mouse over an HTML element</td>
+					</tr>
+					<tr>
+						<td>onmouseout</td>
+						<td>The user moves the mouse away from an HTML element</td>
+					</tr>
+					<tr>
+						<td>onkeydown</td>
+						<td>The user pushes a keyboard key</td>
+					</tr>
+					<tr>
+						<td>onload</td>
+						<td>The browser has finished loading the page</td>
+					</tr>
+				</table>
+
 			</section>
 
 			<section class="main-section" id="js_arrays">
 				<header>
 					<h3 class="categories">JS Arrays</h3>
 				</header>
-			</section>
 
-			<section class="main-section" id="js_scope">
-				<header>
-					<h3 class="categories">JS Scope</h3>
-				</header>
-			</section>
+				<p>JavaScript arrays are used to store multiple values in a single variable.</p>
 
-			<section class="main-section" id="js_switch">
-				<header>
-					<h3 class="categories">JS Switch</h3>
-				</header>
+				<p>Example:</p>
+
+				<div class="div-with-code">
+					<code>var cars = ["Saab", "Volvo", "BMW"];</code>
+				</div>
+
+				<p>If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:</p>
+
+				<div class="div-with-code">
+					<code>var car1 = "Saab";</code> <br>
+					<code>var car2 = "Volvo";</code> <br>
+					<code>var car3 = "BMW";</code>
+				</div>
+
+				<p>However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?</p>
+
+				<p>The solution is an array!</p>
+
+				<p>An array can hold many values under a single name, and you can access the values by referring to an index number. Since the counting in JavaScript starts at 0 and not at 1 like in the usual counting, to access the first item of an array you have to type something like this:</p>
+
+				<div class="div-with-code">
+					<code>var name = cars[0];</code>
+				</div>
+
 			</section>
 
 			<section class="main-section" id="js_loop_for">
 				<header>
 					<h3 class="categories">JS Loop For</h3>
 				</header>
+
+				<p>Loops can execute a block of code a number of times.</p>
+
+				<p>Loops are handy, if you want to run the same code over and over again, each time with a different value.</p>
+
+				<p>Often this is the case when working with arrays:</p>
+
+				<h5>Instead of writing:</h5>
+
+				<div class="div-with-code">
+					<code>text += cars[0] + "&ltbr&gt"; </code> <br>
+					<code>text += cars[1] + "&ltbr&gt";  </code> <br>
+					<code> text += cars[2] + "&ltbr&gt"; </code> <br>
+					<code>text += cars[3] + "&ltbr&gt";  </code> <br>
+					<code>text += cars[4] + "&ltbr&gt";  </code> <br>
+					<code>text += cars[5] + "&ltbr&gt"; </code> 
+				</div>
+
+				<h5>You can write:</h5>
+
+				<div class="div-with-code">
+					<code>var i; </code> <br>
+					<code>for (i = 0; i < cars.length; i++) {  </code> <br>
+					    <code>text += cars[i] + "&ltbr&gt"; </code> <br>
+					<code>}</code>
+				</div>
+
+				<h4>The For Loop</h4>
+
+				<p>The for loop has the following syntax:</p>
+
+				<div class="div-with-code">
+				<code>	for (statement 1; statement 2; statement 3) { <br>
+				  			  code block to be executed <br>
+						} </code>
+				</div>
+
+				<p><strong>Statement 1</strong> is executed (one time) before the execution of the code block.</p>
+
+				<p><strong>Statement 2</strong> defines the condition for executing the code block.</p>
+
+				<p><strong>Statement 3</strong> is executed (every time) after the code block has been executed.</p>
+
+				<h4>The For/In Loop</h4>
+
+				<p>The JavaScript for/in statement loops through the properties of an object:</p>
+
+				<div class="div-with-code">
+					<code>var person = {fname:"John", lname:"Doe", age:25}; <br>
+
+						var text = "";              <br>
+						var x;                      <br>
+						for (x in person) {          <br>
+						    text += person[x];       <br>
+						}</code>
+				</div>
+
 			</section>
 
 			<section class="main-section" id="js_loop_while">
 				<header>
 					<h3 class="categories">JS Loop While</h3>
 				</header>
-			</section>
 
-			<section class="main-section" id="js_hoisting">
-				<header>
-					<h3 class="categories">JS Hoisting</h3>
-				</header>
+				<p>Loops can execute a block of code as long as a specified condition is true.</p>
+
+				<h4>The While Loop</h4>
+				<p>The while loop loops through a block of code as long as a specified condition is true.</p>
+
+				<p>Syntax:</p>
+
+				<div class="div-with-code">
+					<code>while (condition) { <br>
+					    code block to be executed<br>
+					}</code>
+				</div>
+
+				<p>In the following example, the code in the loop will run, over and over again, as long as a variable (i) is less than 10:</p>
+
+				<p>Example:</p>
+
+				<div class="div-with-code">
+					<code>while (i < 10) { <br>
+					    text += "The number is " + i;<br>
+					    i++;<br>
+					}</code>
+				</div>	
+
 			</section>
 
 			<section class="main-section" id="js_errors">
 				<header>
 					<h3 class="categories">JS Errors</h3>
 				</header>
+
+				<p>Ever heard about Murphy's law? It says that whatever can go wrong, will go wrong. It's kind of the same in programming if you're a pessimist not willing to deal with problems. But don't worry, you can fix them all!</p>
+
+				<p>As I said before in this tutorial, errors will happen regardless of how good you are in programming! Here are a few ways to fight with the JavaScript errors:</p>
+
+				<p>The <strong>try</strong> statement lets you test a block of code for errors.</p>
+
+				<p>The <strong>catch</strong> statement lets you handle the error.</p>
+
+				<p>The <strong>throw</strong> statement lets you create custom errors.</p>
+
+				<p>The <strong>finally</strong> statement lets you execute code, after try and catch, regardless of the result.</p>
+
+				<p>Don't be too shy to use them!</p>
+
 			</section>
 
 			<section class="main-section" id="js_debugging">
 				<header>
 					<h3 class="categories">JS Debugging</h3>
 				</header>
-			</section>
 
-			<section class="main-section" id="js_forms">
-				<header>
-					<h3 class="categories">JS Forms</h3>
-				</header>
+				<p>What should you do if you have a long code that's not running and no error messages appear? I guess you wouldn't be eager to rewrite the whole code, right? For this case, you can use debugging, and luckily all modern browsers have a built-in JavaScript debugger.</p>
+
+				<p>With a debugger, you can also set breakpoints (places where code execution can be stopped), and examine variables while the code is executing. Cool, huh?</p>
+
+				<h4>The console.log() Method</h4>
+				<p>If your browser supports debugging, you can use <strong>console.log()</strong> to display JavaScript values in the debugger window:</p>
+
+			<div class="div-with-code">
+				<code>
+					&ltscript&gt  <br>
+							a = 5;      <br>
+							b = 6;       <br>
+							c = a + b;      <br>
+							console.log(c);    <br>
+					&lt/script&gt
+
+				</code>
+			</div>
+
+				<h4>Setting Breakpoints</h4>
+
+				<p>In the debugger window, you can set breakpoints in the JavaScript code.</p>
+
+				<p>At each breakpoint, JavaScript will stop executing, and let you examine JavaScript values.</p>
+
+				<p>After examining values, you can resume the execution of code (typically with a play button).</p>
+
+				<h4>The debugger Keyword</h4>
+
+				<p>The debugger keyword stops the execution of JavaScript, and calls (if available) the debugging function. </p>
+
+				<p>This has the same function as setting a breakpoint in the debugger.</p>
+
+				<p>If no debugging is available, the debugger statement has no effect. </p>
+
+				<p>With the debugger turned on, this code will stop executing before it executes the third line.</p>
+
 			</section>
 
 			<section class="main-section" id="reference">

@@ -17,3 +17,9 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
+
+$(document).ready(function(){
+                $(".show-menu").click(function(){
+                    $("#navbar").toggle();
+                });
+            });

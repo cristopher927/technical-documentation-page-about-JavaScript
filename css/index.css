@@ -103,6 +103,8 @@ img {
   animation-duration: 1.5s;
 }
 
+.show-menu {display: none;}
+
 .operators-table {
   border:1px solid #E6E6E6;
   width: 600px;
@@ -192,28 +194,47 @@ span {
 }
 
 @media only screen and (max-width: 480px) {
+  body {
+    word-wrap: break-word;
+  }
+
   #navbar {
+    background-color: #FAFAFA;
     display: none;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    float: left;
+    overflow: auto;
   }
 
   #main-doc {
-    position: absolute;
+    position: relative;
     left: 12px;
-    width: 500px;
+    width: 100%;
   }
 
   img {
-    width: 125%;
-    height: 125%
+    width: 120%;
+    height: 120%
   }
 
   .operators-table {
-    width: 500px;
+    width: 100%;
+  }
+
+  .show-menu {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
   }
 
   #events-table {
-    width: 500px;
+    width: 100%;
   }
+
+  table {width: 100%;}
 
   .text {
     font-size:12px;

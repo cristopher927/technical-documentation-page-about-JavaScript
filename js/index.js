@@ -19,7 +19,18 @@ function showSlides() {
 }
 
 $(document).ready(function(){
-                $(".show-menu").click(function(){
-                    $("#navbar").toggle();
-                });
-            });
+    $(".show-menu").click(function(){
+        $("#navbar").toggle();
+    });
+    var $navbar = $('#navbar');
+    var $menu = $('.show-menu');
+
+    $(document).click(function (event) {
+       if (!$navbar.is(event.target) // if the target of the click isn't the container...
+       && !$menu.is(event.target)) // ... nor a descendant of the container
+       {
+         $navbar.hide();
+      }
+     });    
+});            
+

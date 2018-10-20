@@ -1,5 +1,5 @@
 * {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
+body {font-family: Verdana, sans-serif;width: 100%;}
 .mySlides {display: none;}
 img {
     vertical-align: middle;
@@ -32,6 +32,7 @@ img {
   position: relative;
   margin: auto;
   width: 60%;
+  left:40px;
 }
 
 .text {
@@ -50,6 +51,7 @@ img {
   float: left;
   overflow-y: scroll;
   position: fixed;
+  top: 23px;
   height: 100%;
 }
 
@@ -103,7 +105,17 @@ img {
   animation-duration: 1.5s;
 }
 
-.show-menu {display: none;}
+.show-menu {
+    display: none;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 4px 8px;
+    position: relative;
+    top: 4px;
+    left: 4px;   
+  }
 
 .operators-table {
   border:1px solid #E6E6E6;
@@ -119,7 +131,7 @@ table, tr, th, td {
 
 #main-doc {
   position: absolute;
-  left: 230px;
+  left: 250px;
 }
 
 nav h3 {
@@ -159,8 +171,8 @@ footer {
   display: inline;
   position: absolute;
   bottom: 0;
-  right: 0;
-  left: 0;
+  right: 25px;
+  left: 25px;
   border-top: 1px solid #FAFAFA;
   padding: 5px 20px;
   text-align: center;
@@ -194,6 +206,7 @@ span {
 }
 
 @media only screen and (max-width: 480px) {
+
   body {
     word-wrap: break-word;
   }
@@ -203,9 +216,9 @@ span {
     display: none;
     position: fixed;
     z-index: 1;
-    height: 100%;
     float: left;
     overflow: auto;
+    top: 50px;
   }
 
   #main-doc {
@@ -226,8 +239,14 @@ span {
   .show-menu {
     display: block;
     position: fixed;
-    left: 0;
-    top: 0;
+    left: 10px;
+    top: 20px;
+    z-index: 1;
+  }
+
+  .slideshow-container {
+    position: relative;
+    left: 10px;
   }
 
   #events-table {

@@ -25,6 +25,7 @@ $(document).ready(function(){
     var $navbar = $('#navbar');
     var $menu = $('.show-menu');
 
+if ($(window).width() < 480 || $(window).height() < 480) {
     $(document).click(function (event) {
        if (!$navbar.is(event.target) // if the target of the click isn't the container...
        && !$menu.is(event.target)) // ... nor a descendant of the container
@@ -32,5 +33,6 @@ $(document).ready(function(){
          $navbar.hide();
       }
      });    
+}
 });            
 
